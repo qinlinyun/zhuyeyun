@@ -1,0 +1,17 @@
+<?php
+
+return [
+    'notice_enabled' => "\u{5f53}\u{524d}\u{6ce8}\u{518c}\u{529f}\u{80fd}\u{5904}\u{4e8e}\u{5f00}\u{542f}\u{72b6}\u{6001}\u{ff0c}\u{4ee5}\u{4e0b}\u{5b9a}\u{65f6}\u{914d}\u{7f6e}\u{5c06}\u{5728}\u{6307}\u{5b9a}\u{65f6}\u{95f4}\u{6bb5}\u{81ea}\u{52a8}\u{5f00}\u{5173}\u{6ce8}\u{518c}\u{5f00}\u{5173}\u{3002}",
+    'notice_disabled' => "\u{5f53}\u{524d}\u{6ce8}\u{518c}\u{529f}\u{80fd}\u{5df2}\u{5173}\u{95ed}\u{ff0c}\u{5b9a}\u{65f6}\u{914d}\u{7f6e}\u{6682}\u{4e0d}\u{751f}\u{6548}\u{3002}",
+    'label_schedule' => "\u{5f00}\u{542f}\u{5b9a}\u{65f6}\u{5f00}\u{5173}\u{6ce8}\u{518c}",
+    'help_schedule' => "\u{5f00}\u{542f}\u{540e}\u{ff0c}\u{5230}\u{8fbe}\u{5173}\u{95ed}\u{65f6}\u{95f4}\u{4f1a}\u{81ea}\u{52a8}\u{5173}\u{95ed}\u{300c}\u{6ce8}\u{518c}\u{5f00}\u{5173}\u{300d}\uff0c\u{5230}\u{8fbe}\u{5f00}\u{542f}\u{65f6}\u{95f4}\u{4f1a}\u{81ea}\u{52a8}\u{5f00}\u{542f}\u{3002}\u{624b}\u{52a8}\u{5f00}\u{542f}\u{6ce8}\u{518c}\u{5f00}\u{5173}\u{4f1a}\u{81ea}\u{52a8}\u{5173}\u{95ed}\u{672c}\u{529f}\u{80fd}\u{3002}",
+    'label_close_time' => "\u{5173}\u{95ed}\u{6ce8}\u{518c}\u{65f6}\u{95f4}",
+    'help_close_time' => "\u{5230}\u{8fbe}\u{6b64}\u{65f6}\u{95f4}\u{540e}\u{81ea}\u{52a8}\u{5173}\u{95ed}\u{6ce8}\u{518c}\u{5f00}\u{5173}\u{ff0c}\u{683c}\u{5f0f}\u{ff1a}\u{5e74}\u{6708}\u{65e5}\u{65f6}\u{5206}\uff08UTC+8\uff09\u{3002}",
+    'label_open_time' => "\u{5f00}\u{542f}\u{6ce8}\u{518c}\u{65f6}\u{95f4}",
+    'help_open_time' => "\u{5230}\u{8fbe}\u{6b64}\u{65f6}\u{95f4}\u{540e}\u{81ea}\u{52a8}\u{5f00}\u{542f}\u{6ce8}\u{518c}\u{5f00}\u{5173}\u{ff0c}\u{5fc5}\u{987b}\u{665a}\u{4e8e}\u{5173}\u{95ed}\u{65f6}\u{95f4}\uff08UTC+8\uff09\u{3002}",
+    'label_status' => "\u{5f53}\u{524d}\u{6548}\u{679c}",
+    'status_on' => "\u{5df2}\u{5f00}\u{542f}",
+    'status_off' => "\u{672a}\u{5f00}\u{542f}",
+    'btn_save' => "\u{4fdd}\u{5b58}\u{914d}\u{7f6e}",
+    'hint_datetime' => "\u{6240}\u{6709}\u{65f6}\u{95f4}\u{5747}\u{6309} UTC+8\uff08\u{4e2d}\u{56fd}\u{6807}\u{51c6}\u{65f6}\u{95f4}\uff09\u{89e3}\u{6790}\u{3002}\u{793a}\u{4f8b}\uff1a\u{5173}\u{95ed} 2026-05-24 22:00\u{3001}\u{5f00}\u{542f} 2026-05-25 08:00\u{3002}",
+];

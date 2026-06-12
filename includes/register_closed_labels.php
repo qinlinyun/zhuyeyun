@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'notice_enabled' => "\u{5f53}\u{524d}\u{6ce8}\u{518c}\u{529f}\u{80fd}\u{5904}\u{4e8e}\u{5f00}\u{542f}\u{72b6}\u{6001}\u{ff0c}\u{4ee5}\u{4e0b}\u{914d}\u{7f6e}\u{5df2}\u{4fdd}\u{5b58}\u{ff0c}\u{4f46}\u{5c06}\u{5728}\u{5173}\u{95ed}\u{6ce8}\u{518c}\u{540e}\u{624d}\u{4f1a}\u{5728}\u{524d}\u{53f0}\u{6ce8}\u{518c}\u{9875}\u{751f}\u{6548}\u{3002}",
+    'notice_disabled' => "\u{5f53}\u{524d}\u{6ce8}\u{518c}\u{529f}\u{80fd}\u{5df2}\u{5173}\u{95ed}\u{ff0c}\u{4ee5}\u{4e0b}\u{914d}\u{7f6e}\u{5c06}\u{663e}\u{793a}\u{5728}\u{6ce8}\u{518c}\u{9875}\u{9762}\u{3002}",
+    'label_text' => "\u{663e}\u{793a}\u{6587}\u{672c}",
+    'help_text' => "\u{6ce8}\u{518c}\u{5173}\u{95ed}\u{65f6}\u{5c55}\u{793a}\u{7ed9}\u{7528}\u{6237}\u{7684}\u{4e3b}\u{8981}\u{8bf4}\u{660e}\u{6587}\u{5b57}\u{ff0c}\u{652f}\u{6301}\u{6362}\u{884c}\u{3002}",
+    'label_color' => "\u{6587}\u{5b57}\u{989c}\u{8272}",
+    'label_text_size' => "\u{5b57}\u{4f53}\u{5927}\u{5c0f}",
+    'help_text_size' => "\u{5355}\u{4f4d}\u{4e3a}\u{50cf}\u{7d20}\uff0c\u{8303}\u{56f4} 12\u{2013}48\u{3002}",
+    'label_blocks' => "\u{5185}\u{5d4c}\u{5185}\u{5bb9}\u{5757}",
+    'help_blocks' => "\u{53ef}\u{6dfb}\u{52a0}\u{94fe}\u{63a5}\u{5757}\u{6216}\u{56fe}\u{7247}\u{5757}\u{ff0c}\u{6309}\u{987a}\u{5e8f}\u{663e}\u{793a}\u{5728}\u{6587}\u{672c}\u{4e0b}\u{65b9}\u{3002}",
+    'btn_link' => "\u{6dfb}\u{52a0}\u{94fe}\u{63a5}",
+    'btn_image' => "\u{6dfb}\u{52a0}\u{56fe}\u{7247}",
+    'block_link' => "\u{94fe}\u{63a5}\u{5757}",
+    'block_image' => "\u{56fe}\u{7247}\u{5757}",
+    'btn_delete' => "\u{5220}\u{9664}",
+    'label_link_text' => "\u{663e}\u{793a}\u{6587}\u{5b57}",
+    'label_link_url' => "\u{94fe}\u{63a5}\u{5730}\u{5740}",
+    'label_link_color' => "\u{6587}\u{5b57}\u{989c}\u{8272}",
+    'label_image_url' => "\u{56fe}\u{7247}\u{5730}\u{5740}",
+    'label_image_alt' => "\u{66ff}\u{4ee3}\u{6587}\u{5b57}\u{ff08}\u{53ef}\u{9009}\u{ff09}",
+    'empty_blocks' => "\u{6682}\u{65e0}\u{5185}\u{5bb9}\u{5757}\u{ff0c}\u{53ef}\u{70b9}\u{51fb}\u{4e0a}\u{65b9}\u{6309}\u{94ae}\u{6dfb}\u{52a0}\u{3002}",
+    'label_preview' => "\u{9884}\u{89c8}",
+    'btn_save' => "\u{4fdd}\u{5b58}\u{914d}\u{7f6e}",
+];
