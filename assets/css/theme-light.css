@@ -1,0 +1,79 @@
+/* 全局浅色主题 — 通过 CSS 变量覆盖 Tailwind 默认色 */
+
+html:not(.dark) body {
+    background-color: var(--theme-body-bg, #f1f1f1);
+    color: var(--theme-body-text, #0f0f0f);
+}
+
+html:not(.dark) body.bg-gray-100,
+html:not(.dark) body.bg-slate-100 {
+    background-color: var(--theme-body-bg, #f1f1f1) !important;
+    color: var(--theme-body-text, #0f0f0f) !important;
+}
+
+html:not(.dark) .bg-gray-50,
+html:not(.dark) .bg-gray-100:not(body),
+html:not(.dark) .bg-slate-100:not(body) {
+    background: var(--theme-surface-muted, #f9fafb) !important;
+    color: var(--theme-body-text, #0f0f0f);
+}
+
+html:not(.dark) .bg-white,
+html:not(.dark) .bg-white\/80,
+html:not(.dark) .bg-white\/90 {
+    background: var(--theme-surface, #ffffff) !important;
+    color: var(--theme-body-text, #0f0f0f);
+}
+
+html:not(.dark) .text-gray-900,
+html:not(.dark) .text-slate-800,
+html:not(.dark) .text-slate-700 {
+    color: var(--theme-text-primary, #111827) !important;
+}
+
+html:not(.dark) .text-gray-800,
+html:not(.dark) .text-gray-700,
+html:not(.dark) .text-gray-600 {
+    color: var(--theme-text-secondary, #4b5563) !important;
+}
+
+html:not(.dark) .text-gray-500,
+html:not(.dark) .text-gray-400 {
+    color: var(--theme-text-muted, #6b7280) !important;
+}
+
+html:not(.dark) .border-gray-100,
+html:not(.dark) .border-gray-200,
+html:not(.dark) .border-gray-300,
+html:not(.dark) .border-b {
+    border-color: var(--theme-border, #e5e7eb) !important;
+}
+
+html:not(.dark) .hover\:bg-gray-50:hover,
+html:not(.dark) .hover\:bg-gray-100:hover,
+html:not(.dark) .hover\:bg-gray-100\/50:hover {
+    background: var(--theme-surface-muted, #f3f4f6) !important;
+}
+
+html:not(.dark) .glass {
+    background: var(--theme-glass, rgba(255, 255, 255, 0.9));
+}
+
+html:not(.dark) input,
+html:not(.dark) textarea,
+html:not(.dark) select {
+    background: var(--theme-input-bg, #ffffff);
+    color: var(--theme-body-text, #0f0f0f);
+    border-color: var(--theme-input-border, #d1d5db);
+}
+
+html:not(.dark) input:focus,
+html:not(.dark) textarea:focus,
+html:not(.dark) select:focus {
+    border-color: var(--theme-accent, #2563eb);
+}
+
+html:not(.dark) select option {
+    background: var(--theme-input-bg, #ffffff);
+    color: var(--theme-body-text, #0f0f0f);
+}

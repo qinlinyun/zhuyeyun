@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "updated_at": "2026-05-24 07:41:49",
+    "items": {
+        "2": {
+            "user_id": 2,
+            "username": "test",
+            "email": "1@qq.com",
+            "logins": 1,
+            "first_login_at": "2026-05-24 07:41:49",
+            "last_login_at": "2026-05-24 07:41:49"
+        }
+    }
+}
