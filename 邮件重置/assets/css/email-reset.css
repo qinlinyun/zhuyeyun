@@ -1,0 +1,411 @@
+/* 邮件重置模块 — 独立样式（不依赖全站 Tailwind 编译产物） */
+
+:root {
+    --er-bg: #f3f4f6;
+    --er-text: #111827;
+    --er-text-muted: #6b7280;
+    --er-card-bg: #ffffff;
+    --er-card-border: #e5e7eb;
+    --er-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --er-input-bg: #ffffff;
+    --er-input-border: #d1d5db;
+    --er-input-readonly-bg: #f9fafb;
+    --er-input-focus: #3b82f6;
+    --er-nav-bg: #ffffff;
+    --er-nav-hover: #f3f4f6;
+    --er-link: #2563eb;
+    --er-link-hover: #1d4ed8;
+    --er-primary: #2563eb;
+    --er-primary-hover: #1d4ed8;
+    --er-primary-ring: rgba(59, 130, 246, 0.45);
+    --er-secondary-border: #d1d5db;
+    --er-secondary-hover: #f9fafb;
+    --er-error-bg: #fef2f2;
+    --er-error-text: #dc2626;
+    --er-success-bg: #f0fdf4;
+    --er-success-text: #15803d;
+    --er-warning-bg: #fffbeb;
+    --er-warning-border: #fde68a;
+    --er-warning-text: #92400e;
+    --er-status-bg: #f9fafb;
+    --er-status-border: #e5e7eb;
+    --er-tooltip-bg: rgba(0, 0, 0, 0.72);
+    --er-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+}
+
+html.dark {
+    --er-bg: #111827;
+    --er-text: #f3f4f6;
+    --er-text-muted: #9ca3af;
+    --er-card-bg: #1f2937;
+    --er-card-border: #374151;
+    --er-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    --er-input-bg: #374151;
+    --er-input-border: #4b5563;
+    --er-input-readonly-bg: #374151;
+    --er-nav-bg: #1f2937;
+    --er-nav-hover: rgba(255, 255, 255, 0.08);
+    --er-link: #60a5fa;
+    --er-link-hover: #93c5fd;
+    --er-primary: #2563eb;
+    --er-primary-hover: #1d4ed8;
+    --er-secondary-border: #4b5563;
+    --er-secondary-hover: rgba(255, 255, 255, 0.06);
+    --er-error-bg: rgba(127, 29, 29, 0.35);
+    --er-error-text: #fca5a5;
+    --er-success-bg: rgba(20, 83, 45, 0.35);
+    --er-success-text: #86efac;
+    --er-warning-bg: rgba(146, 64, 14, 0.25);
+    --er-warning-border: rgba(251, 191, 36, 0.45);
+    --er-warning-text: #fcd34d;
+    --er-status-bg: rgba(255, 255, 255, 0.04);
+    --er-status-border: #374151;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body.er-body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--er-font);
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--er-bg);
+    color: var(--er-text);
+    -webkit-font-smoothing: antialiased;
+}
+
+.er-hidden {
+    display: none !important;
+}
+
+.er-text-muted {
+    color: var(--er-text-muted);
+}
+
+.er-text-strong {
+    font-weight: 600;
+    color: var(--er-text);
+}
+
+.er-text-success {
+    color: var(--er-success-text);
+}
+
+.er-text-warning {
+    color: var(--er-warning-text);
+}
+
+.er-link {
+    color: var(--er-link);
+    text-decoration: none;
+}
+
+.er-link:hover {
+    text-decoration: underline;
+    color: var(--er-link-hover);
+}
+
+/* 登录页 */
+.er-login-wrap {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.er-card {
+    width: 100%;
+    max-width: 28rem;
+    border: 1px solid var(--er-card-border);
+    border-radius: 0.75rem;
+    background: var(--er-card-bg);
+    box-shadow: var(--er-shadow);
+    padding: 1.5rem;
+}
+
+.er-card--wide {
+    max-width: 32rem;
+}
+
+.er-card__header {
+    text-align: center;
+}
+
+.er-card__title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--er-text);
+}
+
+.er-card__desc {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: var(--er-text-muted);
+}
+
+.er-card__footer {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--er-card-border);
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--er-text-muted);
+}
+
+.er-card__footer-sep {
+    margin: 0 0.5rem;
+}
+
+/* 主内容区 */
+.er-main {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* 导航 */
+.er-nav {
+    background: var(--er-nav-bg);
+    box-shadow: var(--er-shadow);
+}
+
+.er-nav__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+}
+
+.er-nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.er-nav a,
+.er-nav button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    background: transparent;
+    color: var(--er-text);
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1.25;
+}
+
+.er-nav a:hover,
+.er-nav button:hover {
+    background: var(--er-nav-hover);
+}
+
+.er-nav svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
+.er-nav a > span {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.25rem;
+    z-index: 50;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    background: var(--er-tooltip-bg);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.er-nav a:hover > span {
+    opacity: 1;
+}
+
+/* 表单 */
+.er-form {
+    margin-top: 1.25rem;
+}
+
+.er-form--spaced > * + * {
+    margin-top: 1rem;
+}
+
+.er-field__label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--er-text);
+}
+
+.er-input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--er-input-border);
+    border-radius: 0.5rem;
+    background: var(--er-input-bg);
+    color: var(--er-text);
+    padding: 0.625rem 0.75rem;
+    font: inherit;
+    font-size: 0.875rem;
+    line-height: 1.25;
+}
+
+.er-input:focus {
+    outline: none;
+    border-color: var(--er-input-focus);
+    box-shadow: 0 0 0 3px var(--er-primary-ring);
+}
+
+.er-input--readonly {
+    background: var(--er-input-readonly-bg);
+    color: var(--er-text-muted);
+    cursor: default;
+}
+
+.er-field__error {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--er-error-text);
+}
+
+/* 按钮 */
+.er-btn {
+    display: inline-block;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1rem;
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.er-btn--block {
+    display: block;
+    width: 100%;
+}
+
+.er-btn--primary {
+    background: var(--er-primary);
+    color: #fff;
+}
+
+.er-btn--primary:hover:not(:disabled) {
+    background: var(--er-primary-hover);
+}
+
+.er-btn--primary:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--er-primary-ring);
+}
+
+.er-btn--secondary {
+    border: 1px solid var(--er-secondary-border);
+    background: transparent;
+    color: var(--er-text);
+    font-weight: 400;
+}
+
+.er-btn--secondary:hover:not(:disabled) {
+    background: var(--er-secondary-hover);
+}
+
+.er-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.er-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 0.25rem;
+}
+
+/* 提示框 */
+.er-alert {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+}
+
+.er-alert--error {
+    background: var(--er-error-bg);
+    color: var(--er-error-text);
+}
+
+.er-alert--success {
+    background: var(--er-success-bg);
+    color: var(--er-success-text);
+}
+
+.er-alert--warning {
+    border: 1px solid var(--er-warning-border);
+    background: var(--er-warning-bg);
+    color: var(--er-warning-text);
+}
+
+/* 状态块 */
+.er-status-box {
+    margin-top: 1rem;
+    border: 1px solid var(--er-status-border);
+    border-radius: 0.5rem;
+    background: var(--er-status-bg);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--er-text-muted);
+}
+
+.er-status-box__title {
+    margin: 0;
+    font-weight: 500;
+    color: var(--er-text);
+}
+
+.er-status-box__text {
+    margin: 0.25rem 0 0;
+}
+
+/* 页面标题区（index 主卡片内） */
+.er-page-title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--er-text);
+}
+
+.er-page-desc {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: var(--er-text-muted);
+}
+
+.er-section {
+    margin-top: 1.25rem;
+}
